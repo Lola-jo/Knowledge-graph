@@ -1,102 +1,12 @@
+# 朱馨宁的知识图谱工程项目
 
-Based on [react-graph-vis](https://github.com/crubier/react-graph-vis)
+## 基于鸢尾花数据集的知识图谱项目
+本项目展示了一个基于鸢尾花数据集的知识图谱，使用了Streamlit框架进行展示。项目使用了Streamlit和PyGraphviz库来展示一个决策树的可视化图。通过加载鸢尾花数据集，训练了一个决策树分类器，然后将训练好的决策树转换为一个漂亮的图形展示出来。用户可以通过侧边栏来调整图的布局和节点之间的间距。最后，生成一个配置对象，将节点和边的信息传递给一个函数，用于生成决策树的可视化图形。
 
+此外，该项目使用Docker部署将应用程序打包到一个独立的容器中，使其在任何环境中可运行。Dockerfile包含了构建你的应用程序所需的所有步骤，包括依赖项的安装、环境变量的设置等。通过使用Docker命令将这个镜像部署到任何支持Docker的环境中，比如本地开发机、云服务器或者容器编排平台（比如Kubernetes）。这样，应用程序就可以在一个独立的、可移植的容器中运行，而不受底层环境的影响。
 
-## Install
+## 示例应用
+查看示例应用 [App](http://43.156.52.96:8501/)!
 
-`pip install streamlit-agraph`
-
-## Example App 
-Check out the example [App](https://marvelous-graph.streamlit.app)!
-
-## Basic Usage
-```python
-import streamlit
-from streamlit_agraph import agraph, Node, Edge, Config
-
-nodes = []
-edges = []
-nodes.append( Node(id="Spiderman", 
-                   label="Peter Parker", 
-                   size=25, 
-                   shape="circularImage",
-                   image="http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_spiderman.png") 
-            ) # includes **kwargs
-nodes.append( Node(id="Captain_Marvel", 
-                   size=25,
-                   shape="circularImage",
-                   image="http://marvel-force-chart.surge.sh/marvel_force_chart_img/top_captainmarvel.png") 
-            )
-edges.append( Edge(source="Captain_Marvel", 
-                   label="friend_of", 
-                   target="Spiderman", 
-                   # **kwargs
-                   ) 
-            ) 
-
-config = Config(width=750,
-                height=950,
-                directed=True, 
-                physics=True, 
-                hierarchical=False,
-                # **kwargs
-                )
-
-return_value = agraph(nodes=nodes, 
-                      edges=edges, 
-                      config=config)
-```
-## Config Builder
-```python
-from streamlit_agraph.config import Config, ConfigBuilder
-
-# 1. Build the config (with sidebar to play with options) .
-config_builder = ConfigBuilder(nodes)
-config = config_builder.build()
-
-# 2. If your done, save the config to a file.
-config.save("config.json")
-
-# 3. Simple reload from json file (you can bump the builder at this point.)
-config = Config(from_json="config.json")
-```
-
-Formating the graph with hierachies is also possible via `Hierarchical Option` (see config):  
-Group as you can see on the node colors too. Just pass the `group` attribute to the `Node` object.
-
-![marvel.png](imgs/marvel_tree.png)
-
-
-
-## TripleStore
-
-You may also want to use the TripleStore (untested & incomplete - yet):  
-HINT: Make sure to add only unique nodes and edges.
-
-```python
-# Currently not workin since update to agraph 2.0 - work in progress
-from rdflib import Graph
-from streamlit_agraph import TripleStore, agraph
-
-graph = Graph()
-graph.parse("http://www.w3.org/People/Berners-Lee/card")
-store = TripleStore()
-
-for subj, pred, obj in graph:
-    store.add_triple(subj, pred, obj, "")
-    
-agraph(list(store.getNodes()), list(store.getEdges()), config)
-```
-
-Also graph algos can dirctly supported via the networkx API (untested & incomplete - yet):
-```python
-from streamlit_agraph import GraphAlgos
-
-algos = GraphAlgos(store)
-algos.shortest_path("Spiderman", "Captain_Marvel")
-algos.density()
-```
-
-
-
-
+## 预览
+查看示例应用 [App](./imgs/iris.png)!
