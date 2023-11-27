@@ -1,10 +1,5 @@
-uvicorn
-fastapi
-opencv-python-headless
-numpy
-pandas
-python-multipart
-tensorflow-cpu
-streamlit_drawable_canvas
-scikit-learn
 pygraphviz
+graphviz 
+streamlit
+scikit-learn
+streamlit_agraph
