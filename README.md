@@ -9,7 +9,7 @@
 查看示例应用 [App](http://43.156.52.96:8501/)!
 
 ## 预览
-![基于鸢尾花数据集的知识图谱](./imgs/iris.png)
+![基于鸢尾花数据集的知识图谱](./iris-knowledge-graph/imgs/iris.png)
 
 ## 致谢
 感谢[ChrisDelClea](https://github.com/ChrisDelClea/streamlit-agraph/commits?author=ChrisDelClea)创建了开源项目[streamlit-agraph](https://github.com/ChrisDelClea/streamlit-agraph)。他们为本项目的大部分内容提供了灵感。
