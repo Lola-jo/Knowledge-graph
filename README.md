@@ -25,22 +25,22 @@
 ### 预览
 # 1) 总体图谱样式
 以500个顺承事件, 进行顺承事件图谱展示,结果是一张事件网络,这是一个大的顺承关系图谱,由众多子图谱构成  
-![image](./SequentialEventExtration/image/graph.png)
+![image](./sequential-event-extration-graph/image/graph.png)
 # 2) 去丽江子图谱
 该子图谱围绕"去丽江旅游"这一出行事件为核心形成的事件群:
-![image](./SequentialEventExtration/image/all.png)
+![image](./sequential-event-extration-graph/image/all.png)
 # 3) 飞机路线子图谱 
 该子图谱显示了选择飞机进行出行形成的事件序列 
-![image](./SequentialEventExtration/image/plane.png)
+![image](./sequential-event-extration-graph/image/plane.png)
 # 4) 火车路线子图谱
 该子图谱显示了选择火车进行出行形成的事件序列
-![image](./SequentialEventExtration/image/train.png)
+![image](./sequential-event-extration-graph/image/train.png)
 # 5) 订酒店事件图谱
 该子图谱描述了一个"预定酒店不愉快事件",从预定到失望到总结,在这条顺承事件链表现出来
-![image](./SequentialEventExtration/image/book.png)
+![image](./sequential-event-extration-graph/image/book.png)
 # 6) 做饭事件图谱
 该子图谱表示了一个"做饭"场景下的顺承事件,感觉也很有意思
-![image](./SequentialEventExtration/image/food.png)
+![image](./sequential-event-extration-graph/image/food.png)
 
 ### 致谢
 感谢[liuhuanyong](https://github.com/liuhuanyong/SequentialEventExtration/commits?author=liuhuanyong)创建了开源项目[SequentialEventExtration](https://github.com/liuhuanyong/SequentialEventExtration)。他为本项目的大部分内容提供了灵感。
