@@ -6,6 +6,22 @@ from sklearn import tree
 from sklearn.datasets import load_iris
 from streamlit_agraph import Config, Edge, Node, agraph
 
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Set header title
+st.title('基于鸢尾花数据集的知识图谱项目')
+
 with st.spinner("Loading iris dataset"):
     iris = load_iris()
     
