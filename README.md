@@ -6,7 +6,7 @@
 此外，该项目使用Docker部署将应用程序打包到一个独立的容器中，使其在任何环境中可运行。Dockerfile包含了构建你的应用程序所需的所有步骤，包括依赖项的安装、环境变量的设置等。通过使用Docker命令将这个镜像部署到任何支持Docker的环境中，比如本地开发机、云服务器或者容器编排平台（比如Kubernetes）。这样，应用程序就可以在一个独立的、可移植的容器中运行，而不受底层环境的影响。
 
 ### 示例应用
-查看示例应用 [App](http://43.156.52.96:8501/)!
+查看基于鸢尾花数据集的示例应用 [基于鸢尾花数据集的知识图谱项目](http://43.156.52.96:8501/)!
 
 ### 预览
 ![基于鸢尾花数据集的知识图谱](./iris-knowledge-graph/imgs/iris.png)
@@ -20,7 +20,7 @@
 顺承事件的抽取包括了对游记文本的输入，长句切分，基于顺承关系模板的前后部分提取，短句处理，谓词性短语提取，谓词性短语向上汇聚，以及滑窗方式构造顺承关系事件对等步骤。而顺承事件图谱的展示则包括了使用VIS插件进行顺承关系图谱的构建与展示，以及在项目中暂时设置到500的顺承图谱的展示。
 
 ### 示例应用
-查看示例应用 [App](http://43.156.52.96:8080/travel_event_graph.html)!
+查看基于50W携程出行攻略的顺承事件抽取与事件示例应用 [基于50W携程出行攻略的顺承事件抽取与事件图谱](http://43.156.52.96:8080/travel_event_graph.html)!
 
 ### 预览
 1) 总体图谱样式
@@ -44,3 +44,15 @@
 
 ### 致谢
 感谢[liuhuanyong](https://github.com/liuhuanyong/SequentialEventExtration/commits?author=liuhuanyong)创建了开源项目[SequentialEventExtration](https://github.com/liuhuanyong/SequentialEventExtration)。他为本项目的大部分内容提供了灵感。
+
+## 基于药物相互作用的知识图谱项目
+这个网站是一个基于streamlit构建的应用，旨在帮助具有临床药学背景的用户探索药物相互作用数据。用户可以通过多选下拉菜单选择不同的药物，然后应用会根据用户的选择构建一个药物相互作用的网络图。这个网络图展示了所选药物之间的相互作用关系，有助于用户理解药物之间的联系以及可能的不良反应。应用还提供了交互式的功能，帮助他们探索药物相互作用数据并应用领域知识进行分析。
+
+### 示例应用
+查看基于药物相互作用的示例应用 [基于药物相互作用的知识图谱项目](http://43.156.52.96:8611/)!
+
+### 预览
+![基于药物相互作用的知识图谱](./iris-knowledge-graph/imgs/iris.png)
+
+### 致谢
+感谢[Kenneth Leung](https://kennethleungty.medium.com/)创建了开源项目[Pyvis-Network-Graph-Streamli](https://github.com/kennethleungty/Pyvis-Network-Graph-Streamlit)。他们为本项目的大部分内容提供了灵感。
