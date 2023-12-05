@@ -52,7 +52,10 @@
 查看基于药物相互作用的示例应用 [基于药物相互作用的知识图谱项目](http://43.156.52.96:8611/)!
 
 ### 预览
-![基于药物相互作用的知识图谱](./iris-knowledge-graph/imgs/iris.png)
+#### 基于药物相互作用的知识图谱:
+![基于药物相互作用的知识图谱](./drug-knowledge-graph/demo/Drug_Interaction_Knowledge_Graph.png)
+#### 基于药物相互作用的知识图谱实例演示:
+![基于药物相互作用的知识图谱实例演示](./drug-knowledge-graph/demo/drug-demo.gif)
 
 ### 致谢
 感谢[Kenneth Leung](https://kennethleungty.medium.com/)创建了开源项目[Pyvis-Network-Graph-Streamli](https://github.com/kennethleungty/Pyvis-Network-Graph-Streamlit)。他们为本项目的大部分内容提供了灵感。
