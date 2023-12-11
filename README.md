@@ -98,8 +98,7 @@
 | Sakr_Awad_2010_A framework for querying graph-based business process models.pdf                                                     | [多元模型][会议论文]      | 基于图形模型的业务流程模型查询框架                   | 2010/4/26    | Proceedings of the 19th international conference on World wide web                            |
 | Smart Condition Monitoring for Industry 4.0 Manufacturing Processes: An Ontology-Based Approach                                     | [多元模型][期刊文章]      | 基于本体的智能制造过程智能监测方法                   | 2019/2/17    | Cybernetics and Systems        
 
-## 相应文献泛读概述     
-                                                            |
+## 相应文献泛读概述
 
 此外，精读了其中几篇文献。其中，对一些文章进行了简短的总结，并记录了相应的启发，以下是一些拙见：
 
